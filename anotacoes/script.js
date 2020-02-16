@@ -1,5 +1,5 @@
 // ---------------  Primeiro Programa - Ex1  ------------------
-// Programando as quatro operações, com dois numeros
+// Programando as quatro operações (dois numeros)
 
 // function mostra(operacao,resultado){
 //     console.log("O resultado da " + operacao + " é: " + resultado)
@@ -133,6 +133,12 @@
 
 // let mes = parseInt(prompt("Informe o numéro do mês."));
 
+//         x -      0                1                     11
+//         y -      0     1         0      1            0      1
+//            [["Janeiro",01],["Fevereiro",02],...,["Dezembro",12]]
+// meses[x][y] - o indice X navega entre os dados do vetor, e o indice
+//               y navega entre os dados do vetor interno.
+
 // for(i=0; i<meses.length; i++){
 //     if (meses[i][1] == mes) {
 //         console.log("O mês correspondente é: " + meses[i][0]);        
@@ -156,7 +162,7 @@
 // console.log(myObject[1].idade);
 
 // ---------------  Sexto Programa - Ex6  ------------------
-// Criação de Array
+// Criação de Array, de outro modo, mais usado
 
 // let contato = { 
 //     'nome': 'Patrick',
