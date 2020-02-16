@@ -1,0 +1,21 @@
+Comandos do Terminal (Inicial)
+
+- dir (mostra todas as pastas existentes na pasta que está)
+- dir/w/s (mostra todos os arquivos existentes no computador)
+- ctrl + c (paralisa todos os comandos que estão sendo realizados)
+- cd __ (comando de movimentação entre pastas / cd nomePasta)
+- cd .. (retorna a pasta anterior)
+- cls ou clear (limpa a tela do terminal)
+- mkdir __ (cria uma pasta / mkdir teste)
+- rmdir __ (apaga uma pasta / rmdir teste)
+- touch __.__ (cria um arquivo na pasta / touch teste.txt)
+- rm __.__ (apaga um arquivo da pasta / rm teste.txt)
+- vim __.__ (cria e escreve dentro do arquivo via terminal / vim teste.txt)
+- cp __.__ __ (copia um arquivo para outro lugar / cp teste.txt C://users/pedro/desktop/teste)
+- mv __ __.__ __ __.__ (move/renomeia um arquivo / mv C://users/pedro/desktop/teste teste.txt C://users/pedro/desktop/teste teste.txt)
+- cat __.__ (mostra o conteúdo dentro do arquivo / cat teste.txt)
+- nano __.__ (edita o arquivo / nano teste.txt), após utilizar ctrl + O para salvar
+
+Para verificar mais comandos, acesse:
+https://www.lucascaton.com.br/2018/01/07/comandos-para-o-terminal-windows-macos-e-linux/
+...

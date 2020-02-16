@@ -1,0 +1,23 @@
+Comandos do GIT
+
+- git init (inicializa o git local, não mexer na pasta criada)
+- git remote add origin __ (conecta junto ao diretório do GitHub / git remote add origin URL.git)
+- git status (verifica o status atual do sistema, util e recomendado a utilizar constantemente)
+- git add __ ( ./-A - adiciona todos os arquivos da pasta / nome - adiciona um arquivo específico)
+- git commit -a -m ''__'' (digita o comentário que irá ser mostrado no GitHub)
+- git push origin __ (sobe o arquivo ao github, identificar a ramificação que está subindo)
+- git diff  (mostra as diferenças entre o arquivo local e do remoto)
+- git reset (cancela os arquivos da fila do commit)
+- git branch (mostra as branch existentes)
+- git branch __ (cria uma branch)
+- git branch -D __ (apaga uma branch)
+- git checkout __ (troca a branch em utilização)
+- git log (mostra o que fora realizado no arquivo)
+- git pull origin __ (verifica se a branch está atualizada com o diretório remoto, caso não esteja, ele atualiza automaticamente)
+- git push origin __ --delete (apaga a branch)
+- git merge __ (faz a junção das branch / utiliza-se o nome da branch onde irá pegar as informações)
+
+Para mais informacoe, acessar:
+https://rogerdudler.github.io/git-guide/index.pt_BR.html (Comandos Git)
+https://github.com/formigp/participantes/blob/master/Manual%20de%20Sobreviv%C3%AAncia%20GIT.md (Guia de Sobrevivência Git)
+
