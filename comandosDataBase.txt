@@ -1,0 +1,98 @@
+Banco de Dados
+
+- CREATE DATABASE __ (Criando o Banco de Dados, nomeando-o)
+- USE __ (Mudando o Banco de Dados que está utilizando)
+- CREATE TABLE __ (Criando uma tabela)
+- SHOW TABLES (Mostra todas as tabelas existentes)
+- DESC __ (Mostra as características da tabela)
+- INSERT INTO TABELA __ (Sintaxe básica de inserção de dados)*
+
+- Projeção (SELECT) / Seleção (WHERE) / Junção (JOIN)
+SELECT X AS A, Y, Z FROM M (Seleciona as colunas que irão ser exibidas ao usuário)
+X, Y e Z -> Nome das Colunas.
+AS A -> Nomeando diferente a coluna ao exibir.
+M -> Nome da Tabela de onde vem os dados.
+
+Adicionando a seleção(WHERE) a sintaxe:
+SELECT X, Y, Z
+FROM M
+WHERE Y = 1  -> Coloca uma condição para que seja mostrada.
+
+Adicionando a junção(JOIN) a sintaxe:
+SELECT X, Y, F, J
+FROM M
+INNER JOIN N	-> Faz a junção de dados de outra tabela
+ON CP = CE	-> realiza a ligação entre elas através da Chave Priméria (CP) e Chave Estrangeira (CE)
+		Obs.: Verificar Teoria no ReadMe
+Alguns comandos que podem ser usados:
+SELECT COUNT(*) FROM _	-> Faz a contadem de quantos registro tem
+GROUP BY __;		-> Agrupa de acordo com a variável informada
+ORDER BY __;		-> Ordena a coluna indicada (Simplificada)
+ |-> Na ocorrência de se querer ordenar por uma coluna que não será mostrada, se faz necessário a utilização do nome da mesma, para sua identificação; do contrário pode-se utilizar da numeração da mesma, que seguirá a ordem que fora colocada na hora da projeção.
+
+- A função DELETE deve ser utilizada juntamente ao WHERE, para que tenha-se exata certeza de qual dado está sendo apagado.
+DELETE FROM _	-> Define a tabela que será apagao o dado
+WHERE _		-> Define a condição para qual o dado tem que bater para ser apagado
+
+- Modificando Tabelas Criadas
+	Alterando Coluna
+ALTER TABLE X
+CHANGE a b INT NOT NULL
+
+	Alterando Tipo
+ALTER TABEL X
+MODIFY b VARCHAR(30) NOT NULL
+
+	Adicionando Colunas
+ALTER TABLE X
+ADD c INT NOT NULL 	-> AFTER W (Depois da coluna especificada) / FIRST (Primeiro)
+
+	Apagando Coluna
+ALTER TABLE X
+DROP COLUMN c
+
+- Função para apresentação de dados Nulos/Vazios no banco de dados
+Ifnull(__,__)	-> Utilizar na linha da projeção
+	   |-> msg a ser apresentada
+        |-> coluna a ser verificada
+
+- VIEW -> "Apelido" dado a uma query pré-pronta, tipo uma função
+CREATE VIEW V_EXEMPLO AS	-> Nomeando a View sempre com V_, indicando que é uma View
+	...			-> Linhas de Programação
+				Obs.: Pode-se utilizar a mesma nas querys, simplificando as mesmas
+SELECT X, Y, Z		-> Projeta essas colunas, utilizando-se da VIEW criada
+FROM V_EXEMPLO
+
+PROCEDURES -> Blocos de Programação
+
+CREATE PROCEDURE EXEMPLO()	-> Procedure sem parâmetros, somente executando o que fora programado nele.
+BEGIN
+	...	-> Linhas de Código
+END
+$		-> Delimitador
+
+Obs.: Sempre alterar o Delimitador antes de se iniciar a programação na Procedure.
+DELIMITER $	-> Alterando o Delimitador
+
+CREATE PROCEDURE EXEMPLO2(INT A, INT B)	-> Procedure com parâmetros, tendo seu uso mais variado.
+BEGIN
+	...	-> Linhas de Programação
+END
+$
+
+DROP PROCEDURE EXEMPLO2		-> Faz a exclusão da Procedure
+
+- Funções pré-programadas no MySql
+SELECT __(__) FROM X -> Nome da Tabela
+          |-> Noma da Coluna
+       |-> Funções MAX, MIN, AVG, SUM (1)
+
+Há também a função Truncate, delimitando as casas decimais.
+SELECT TRUNCATE(AVG(x),2) FROM X
+                       |-> Quantidade de casas decimais
+		|-> numero a ser truncado
+
+- SUBQUERY
+SELECT X, Y FROM A
+WHERE Y = (SELECT __(Y) FROM A)
+...
