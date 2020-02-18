@@ -1,0 +1,6 @@
+GitFlow -> Sistema para organização de repositórios no Github
+Links de consulta:
+https://fjorgemota.com/git-flow-uma-forma-legal-de-organizar-repositorios-git/
+
+Pixabay -> Imagens em alta qualidade, sem a necessidade de colocar direitos
+Link: https://pixabay.com/pt/

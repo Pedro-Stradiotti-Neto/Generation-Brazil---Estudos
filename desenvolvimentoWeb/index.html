@@ -1,0 +1,106 @@
+<!-- Código base para a criação do HTML   -> No VSCode somente digitar ! e confirmar
+                                CÓDIGO BASE HTML
+<!DOCTYPE html>             -> Representa o tipo do arquivo, sendo HTML5 (Obrigatório)
+<html lang="pt-br">         -> Atributo que define a linguagem exibida no HTML
+
+<head>                      -> Início do cabeçalho
+    <meta charset="UTF-8">  -> Padrão de caracteres aceitáveis
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  -> Ativa configurações de responsabilidade
+    <title>Document</title>
+                            -> viewport: "tela branca do navegador"
+                            -> width=device-width: Define o tamanho da tela a ser exibida, de acodo com o dispositivo
+                            -> initial-scale: Escala de visualização.
+</head>                     -> Fim do cabeçalho
+
+<body>                      -> Inicio do corpo do conteúdo a ser mostrado
+    
+</body>                     -> Fim do corpo do conteúdo a ser mostrado
+
+</html> -> Fim do Código Base HTML
+
+-- TAG's --
+<h1></h1>   -> Primeiro título, sendo que o mesmo vai até h6, sendo a mesma estrutura
+<p></p>     -> Cria um parágrafo para digitação de um texto
+<img src="" alt=""> -> Inserir imagens a página / TAG sem fechamento (vazia)
+            src     -> Indica o caminho para pegar a imagem, quando na mesma pasta, somente precisa do nome da imagem.
+            alt     -> Indica um texto para quando não carregar a imagem, ou para pessoas com deficiencia visual
+
+Order List - (<ol></ol>)    -> Cria uma lista ordenada, pode-se determinar o tipo da ordenação (<ol type="..."> -> I,a,A,1)
+Unorder List (<ul></ul>)    -> Cria uma lista sem identificação de ordem (<ul type="..."> -> circle, square, disc)
+Lista Mista         ->
+Item List  - (<li></li>)    -> Informa quais os itens que estão contidos dentro da lista criada.
+Obs.: Pode-se também tirar as "marcações" colocando no type="none", porém não deve-se utilizar no HTML
+
+<a href="URL">__</a>        -> Adiciona um link junto a uma palavra para fazer a mudança de pagina.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Web</title>
+</head>
+
+<body>
+    <h1>Menu</h1>
+    <ul type="circle">
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="sobre.html">
+                Sobre
+            </a>
+        </li>
+        <li>
+            <a href="mapa.html">
+                Mapa
+            </a>
+        </li>
+        <li>
+            <a href="confronto.html">
+                Confronto
+            </a>
+        </li>
+    </ul>
+
+    <h1>Primeiro Projeto Web</h1>
+    <p>
+        Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et
+        per.
+        Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+    </p>
+
+    <img src="castle.jpg" alt="Um castelo em meio a uma noite com lua cheia.">
+
+    <h2>Enredo da História</h2>
+    <p>
+        Em uma noite de lua cheia, ...
+    </p>
+
+    <!-- Lista Ordenada -->
+
+    <h2>Classes Disponíveis</h2>
+    <ol type="I">
+        <li>Mago</li>
+        <li>Cavaleiro</li>
+        <li>Suporte</li>
+        <li>Berserker</li>
+        <li>Arqueiro</li>
+    </ol>
+
+    <h2>Raças Disponíveis</h2>
+    <ul type="circle">
+        <li>Humano</li>
+        <li>Elfo</li>
+        <li>Anão</li>
+        <li>Goblin</li>
+    </ul>
+
+</body>
+
+</html>
