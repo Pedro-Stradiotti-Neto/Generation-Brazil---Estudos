@@ -1,0 +1,32 @@
+/*          Estrutura Básica do CSS 
+Seletor {
+            Propriedade: Valor;
+        }
+Obs.: Deve-se sempre colocar o ";" ao final da instrução.
+
+width               -> Largura
+height              -> Altura
+background-color    -> Cor de Fundo
+float               -> Flutua um dado
+
+Obs.: 
+    *Para previnir, no uso do float e com restrições, indica-se o caminho que está a TAG (header > nav)
+    *ID são chamados por o # antes do novo do ID. O ID deve ser unico para todo o site.
+
+Extras:
+Flex Box / CSS Grip
+*/
+
+header{
+    width: 1000px;
+    height: 120px;
+    background-color: #7fffd4;
+}
+
+header > img{
+    float: left;
+}
+
+header > nav{
+    float: left;
+}
