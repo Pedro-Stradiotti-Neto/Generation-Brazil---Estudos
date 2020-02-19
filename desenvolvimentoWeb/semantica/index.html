@@ -3,7 +3,11 @@
 <link rel="stylesheet" href="__.css">   -> Faz o link entre o HTML com o CSS (Sempre deve vir ao fim do Head)
                                 rel     -> Relação de documentos
                                 href    -> Informa o arquivo que irá fazer o link
- -->
+
+classe = class      -> Classe dada a uma TAG
+id                  -> Código de Identificação Unico de uma TAG, melhorando seu uso na parte de estilo (CSS)
+
+-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,74 +16,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementos Semânticos</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- Reseta as config do navegador -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
 
-    <!-- Área de Topo - Logotipo e Menu -->
-    <header>
-        <img src="img/logo-topo2.png" alt="Símbolo HTML">
-        <nav>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <main>
 
-    </header>
+        <!-- Área de Topo - Logotipo e Menu -->
+        <header>
+            <img src="img/logo-topo2.png" alt="Símbolo HTML">
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Trabalhos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
 
-    <!-- Seção de Conteúdo (Sobre) -->
-    <section>
-        <h1>Dev FrontEnd</h1>
-        <p>O HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma
-            tecnologia chave da Internet, originalmente proposto por Opera Software.[1] É a quinta versão da linguagem
-            HTML. Esta nova versão traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web, através de
-            novas funcionalidades como semântica e acessibilidade. Possibilita o uso de novos recursos antes possíveis
-            apenas com a aplicação de outras tecnologias. Sua essência tem sido melhorar a linguagem com o suporte para
-            as mais recentes multimídias, enquanto a mantém facilmente legível por seres humanos e consistentemente
-            compreendida por computadores e outros dispositivos (navegadores, parsers etc). O HTML5 será o novo padrão
-            para HTML, XHTML, e HTML DOM. Atualmente, está em fase de esboço, porém diversos navegadores já implementam
-            algumas de suas funcionalidades. </p>
-    </section>
+        </header>
 
-    <!-- Seção de Conteúdo (Trabalhos) -->
-    <section>
-        <article>
-            <h2>Sites</h2>
-            <img src="img/sites.png" alt="Site">
-            <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing
-                et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa
-                arma uma pindureta.</p>
-        </article>
+        <!-- Seção de Conteúdo (Sobre) -->
+        <section class="sobre">
+            <img src="img/equipe.jpg" alt="Sobre">
+            <h1>Pedro Stradiotti Neto <br> dev FrontEnd</h1>
+            <p>O HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma
+                tecnologia chave da Internet, originalmente proposto por Opera Software.[1] É a quinta versão da
+                linguagem
+                HTML. Esta nova versão traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web,
+                através de
+                novas funcionalidades como semântica e acessibilidade. Possibilita o uso de novos recursos antes
+                possíveis
+                apenas com a aplicação de outras tecnologias. Sua essência tem sido melhorar a linguagem com o suporte
+                para
+                as mais recentes multimídias, enquanto a mantém facilmente legível por seres humanos e consistentemente
+                compreendida por computadores e outros dispositivos (navegadores, parsers etc). O HTML5 será o novo
+                padrão
+                para HTML, XHTML, e HTML DOM. Atualmente, está em fase de esboço, porém diversos navegadores já
+                implementam
+                algumas de suas funcionalidades. <br>
+                Após seus predecessores imediatos HTML 4.01 e XHTML 1.1, HTML5 é uma resposta à observação de que o HTML
+                e o XHTML, de uso comum na World Wide Web, é uma mistura de características introduzidas por várias
+                especificações, juntamente com aquelas introduzidas por software, tais como os navegadores, aqueles
+                estabelecidos pela prática comum, e os muitos erros de sintaxe em documentos existentes na web.</p>
+        </section>
 
-        <article>
-            <h2>Sistemas</h2>
-            <img src="img/sistemas.png" alt="Sistemas">
-            <p>Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai
-                girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
-        </article>
+        <!-- Seção de Conteúdo (Trabalhos) -->
+        <section class="trabalhos">
+            <h1>TRABALHOS E PROJETOS</h1>
+            <article class="sites">
+                <h2>Sites</h2>
+                <img src="img/sites.png" alt="Site">
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram
+                    sadipscing
+                    et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa
+                    arma uma pindureta.</p>
+            </article>
 
-        <article>
-            <h2>Projetos</h2>
-            <img src="img/projetos.png" alt="Projetos">
-            <p>A ordem dos tratores não altera o pão duris. Nullam volutpat risus nec leo commodo, ut interdum diam
-                laoreet. Sed non consequat odio. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat.
-                Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>
-        </article>
+            <article class="sistemas">
+                <h2>Sistemas</h2>
+                <img src="img/sistemas.png" alt="Sistemas">
+                <p>Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo
+                    vai
+                    girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                    Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+            </article>
 
-    </section>
+            <article class="projetos">
+                <h2>Projetos</h2>
+                <img src="img/projetos.png" alt="Projetos">
+                <p>A ordem dos tratores não altera o pão duris. Nullam volutpat risus nec leo commodo, ut interdum diam
+                    laoreet. Sed non consequat odio. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat.
+                    Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>
+            </article>
 
-    <!-- Contato -->
+        </section>
 
-    <div>
-        <p>@pedroSneto<br>(11) 9.6700-2876<br>pedrostra.neto@gmail.com</p>
-    </div>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1293.341825818826!2d-46.69246716157946!3d-23.528074424570878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1582052063946!5m2!1spt-BR!2sbr"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <!-- Contato -->
+        <div class="contatos">
+            <h1>Á disposição <br> Aguardo seu contato.</h1>
+            <p>@pedroSneto<br>(11) 9.6700-2876<br>pedrostra.neto@gmail.com</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1293.341825818826!2d-46.69246716157946!3d-23.528074424570878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1582052063946!5m2!1spt-BR!2sbr"
+            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        <footer>
+            <img src="img/logo-senac.png" alt="Logotipo">
+        </footer>
+
+    </main>
 
 </body>
 

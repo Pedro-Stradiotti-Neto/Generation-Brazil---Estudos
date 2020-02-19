@@ -1,11 +1,31 @@
-/*          Estrutura Básica do CSS 
+/*          
+            Diretrizes do CSS
+@charset "utf-8";
+
+            Estrutura Básica do CSS 
 Seletor {
             Propriedade: Valor;
         }
-Obs.: Deve-se sempre colocar o ";" ao final da instrução.
+Obs.: Deve-se sempre colocar o ";" ao final de toda a instrução.
 
-width               -> Largura
-height              -> Altura
+Descendente Direto      -> Está localizado logo na camada principal da pai
+Descentende Indireto    -> Está localizado dentro de uma outra TAG que está na camada principal
+                Exemplo 
+    <div>
+        <p></p>     -> Direto
+    </div>
+
+    <div>
+        <section>
+            <p></p> -> Indireto
+        </section>
+    </div>
+
+
+width               -> Largura (Pode-se definir em porcentagem, assim escrita de acordo com os parâmetros da ramificação pai)
+max-width           -> Limite máximo que a largura poderá ter
+height              -> Altura  (Pode-se definir em porcentagem, assim escrita de acordo com os parâmetros da ramificação pai)
+max-height          -> Limite máximo que a altura poderá ter
 background-color    -> Cor de Fundo
 float               -> Flutua um dado
 
@@ -13,20 +33,316 @@ Obs.:
     *Para previnir, no uso do float e com restrições, indica-se o caminho que está a TAG (header > nav)
     *ID são chamados por o # antes do novo do ID. O ID deve ser unico para todo o site.
 
+Fontes
+https://fonts.google.com/   -> Tomar cuidado a utilizar, devido ser um repositório Web e ser sucetivel a sair 
+do ar e perder a fonte selecionada
+
+        Box Model (Sempre fazer no sentido horário, partindo da parte de cima)
+margin-top      -> Definição da margem da "caixa" que irá ter no site, referente ao topo 
+       right    -> Definição da margem da "caixa" que irá ter no site, referente a direita
+       bottom   -> Definição da margem da "caixa" que irá ter no site, referente a baixo
+       left     -> Definição da margem da "caixa" que irá ter no site, referente a esquerda
+
+paddin-top      -> Definição da margem dos itens internos da "caixa", referente ao topo
+       right    -> Definição da margem dos itens internos da "caixa", referente a direita
+       bottom   -> Definição da margem dos itens internos da "caixa", referente a baixo
+       left     -> Definição da margem dos itens internos da "caixa", referente a esquerda
+
+padding: __px;                  -> Aplica nas quatro dimensões
+padding: __px __px;             -> Aplica o primeiro no topo e baixo e o segundo na direita e esquerda
+padding: __px __px __px __px    -> Aplica em sentido horário a partir do topo (Top, Right, Bottom, Left)
+Obs.: Mesma instrução para o margin
+
+Seletor Universal, que irá aplicar todas as propriedades a tudo no CSS (->*)
+*{
+    box-sizing: border-box;     -> Faz com que a "caixa" não aumente quando colocar o espaçamento interno
+}
+
 Extras:
-Flex Box / CSS Grip
+Flex Box / CSS Grip / Tipografia
 */
 
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    color: azure;
+    background-color: #2ba8d9;
+    font-family: 'Marvel', sans-serif;
+    font-style: italic;
+}
+
+main{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* Estilo do Topo e Menu */
 header{
-    width: 1000px;
-    height: 120px;
-    background-color: #7fffd4;
+    background-color: #2ba8d9;
+    height: 180px;
+    padding: 0.7em;
 }
 
-header > img{
+header > img {
     float: left;
+    margin: 15px;
 }
 
-header > nav{
+header > nav {
+    width: 250px;
+    float: right;
+    overflow: hidden;
+}
+
+header > nav > ul {
+    list-style: none;
+}
+
+header > nav > ul > li {
+    padding-right: 5px;
+}
+
+/* Antes de clicar no link */
+header > nav > ul > li > a:link{
+    display: block;
+    font-size: 1.4em;                           /* Tamanho da Fonte */
+    text-align: center;                         /* Alinhamento */
+    text-decoration: none;                      /* Decorações dos textos */
+    color: white;                             /* Cor da fonte */
+    height: 40px;                               /* Espaçamento entre os textos (usado em caixas) */
+    font-weight: bolder;                        /* Negrito */
+    line-height: 1.4em;                         /* Espaçemento entre os textos (usado em paragráfos) */
+    background-color: #537280;                /* Cor de fundo da "caixa" */
+    margin-bottom: 10px;                        
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 0px black;      /* Sombra na caixa */
+}
+
+/* Após clicar no link */
+header > nav > ul > li > a:visited{             
+    color: white;
+}
+
+/* Passar o mouse por cima */
+header > nav > ul > li > a:hover{               
+    background-color: #005c85;
+    border-start-start-radius: 20px;
+}
+
+/* Estilo dos titulos da seção */
+h1{
+    font-size: 3em;
+    margin: 0 20px 25px 20px;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Seção Sobre */
+.sobre{
+    background-color: #537280;
+    padding: 1em;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.sobre > img{
     float: left;
+    margin-right: 20px;
+}
+
+/* Seção Trabalhos */
+.trabalhos{
+    background-color: #f1c17e;
+    padding: 1em;
+    margin-bottom: 3%;
+    overflow: hidden;       /* -> Faz com que o sistema controle a altura da caixa */
+}
+
+.trabalhos > article{
+    float: left;
+    width: 30.2%;
+    margin: 0.9em;
+    height: 500px;
+    box-shadow: 3px 2px 2px 0 grey;
+    margin-right: 2em;
+    text-align: justify;
+    padding: 0.7em;
+    border-radius: 10px;
+}
+
+.trabalhos > article > img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sites{
+    background-color: #82D9C4;
+}
+
+.sistemas{
+    background-color: #88B0E3;
+}
+
+.projetos{
+    margin-right: 2em;background-color: #74A0B3;
+}
+
+/* Seção Contatos */
+.contatos{
+    width: 40%;
+    padding: 30px;
+    float: left;
+    text-align: center;
+}
+
+.contatos > p {
+    font-size: 1.2em;
+}
+
+iframe{
+    width: 55%;
+    height: 300px;
+    float: right;
+    margin-right: 30px;
+}
+
+/* Rodapé */
+footer{
+    float: left;
+    width: 100%;
+}
+
+footer > img{
+    width: 15%;
+    margin: 5% 40%;
+}
+
+/* Início do Layout Mobile - Responsividade */
+
+/* ---------- Break Point ---------- */
+
+@media screen and (max-width:1440px){   /* -> Faz os ajustes de acordo com os pixels onde ocorre as quebras */
+    .trabalhos > article {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .sobre > h1{
+        font-size: 2.5em;
+    }
+
+    .trabalhos > article {
+        width: 28%
+    }
+}
+
+@media screen and (max-width:768px){
+    .sobre > img {
+        float: none;
+        width: 100%;
+    }
+
+    .sobre > h1 {
+        text-align: center;
+    }
+
+    .sobre > p {
+        text-align: justify;
+    }
+
+    .trabalhos > article {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:425px){
+    header > img{
+        float: none;
+        margin-left: 105px;
+    }
+
+    header > nav {
+        width: 100%;
+    }
+
+    .trabalhos > article {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        height: 450px;
+    }
+
+    .trabalhos > article > h2{
+        font-size: 2em;
+    }
+
+    .contatos {
+        float: none;
+        width: 100%;
+    }
+
+    .contatos > h1 {
+        font-size: 2.5em;
+    }
+
+    iframe {
+        float: none;
+        width: 95%;
+        margin: 0 10px;
+    }
+
+    footer {
+        float: none;
+    }
+    footer > img {
+        width: 20%;
+        height: 20%;    
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+    header > img {
+        margin-left: 85px;
+
+    }
+}
+
+@media screen and (max-width: 320px){
+    header > img {
+        margin-left: 55px;
+    }
+
+    .sobre > h1{
+        font-size: 2em;
+    }
+
+    .trabalhos > h1 {
+        font-size: 2em;
+    }
+
+    .trabalhos > article > h2 {
+        font-size: 1.5em;
+    }
+
+    .contatos > h1 {
+        font-size: 1.8em;
+    }
+
+    .contatos > p {
+        font-size: 1em;
+    }
 }
