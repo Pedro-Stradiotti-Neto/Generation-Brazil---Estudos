@@ -1,0 +1,23 @@
+/* 
+border  -> Borda a ser colocada (border: 1px ___ cor(hexa))
+                                             |-> estilos da borda
+Link: https://www.w3schools.com/css/css_border.asp
+
+*/
+
+.pai {
+    border: 1px solid #0ab4e2;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    padding: 15px;
+}
+
+.filho {
+    border: 1px solid black;
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
