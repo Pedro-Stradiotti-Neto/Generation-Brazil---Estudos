@@ -1,3 +1,17 @@
+<!-- 
+<form action="" method=""></form>     -> TAG de formulário / 
+                               action -> para onde irá ser direcionado
+                               método -> Método de envio
+
+<input type="text" id="__" name="__"> -> TAG para caixa de texto
+             text       -> Para textos
+             email      -> Para e-mails
+             password   -> Para senhas
+             submit     -> Criação de um botão (<input type="submit" value="__">) - value: texto a ser exibido
+
+Link: https://www.w3schools.com/html/html_images_background.asp (buscar mais informações)
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,14 +31,15 @@
         .topo {
             box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
             padding: 15px 0;
-            width: 100%;
             background-color: cornsilk;
             text-align: center;
             font-weight: bold;
             font-family: arial, Verdana, sans-serif;
+            transform: rotate(-90deg);
+            height: 1em;
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 20em;
+            left: -8em;
         }
 
         p {
@@ -35,6 +50,27 @@
             font-size: 2em;
             text-align: justify;
             line-height: 2em;
+        }
+
+        form {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px darkgray;
+            height: 200px;
+            width: 180px;
+            position: fixed;
+            top: 32em;
+            left: 1em;
+            background-image: url(img/castledoor.jpg);
+            /* -> Falta a parte de opacidade */
+            background-size: 100% 100%;
+        }
+
+        form>input {
+            margin-bottom: 1em;
         }
     </style>
 
@@ -79,6 +115,17 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta tenetur, cupiditate placeat iusto quibusdam
         minus perspiciatis recusandae, eos facere facilis praesentium eaque nostrum excepturi doloribus fuga, fugiat
         possimus. Perspiciatis!</p>
+
+    <form action="https://www.google.com.br" method="POST">
+        <label for="nome" id="name">Nome</label>
+        <input type="text" id="nome" name="nm">
+        <label for="email">E-mail</label>
+        <input type="email" name="abacaxi" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="pas">
+        <input type="submit" value="Cadastrar">
+    </form>
+
 </body>
 
 </html>
