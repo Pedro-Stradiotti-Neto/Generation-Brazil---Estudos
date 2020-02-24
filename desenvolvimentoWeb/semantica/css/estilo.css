@@ -12,12 +12,12 @@ Descendente Direto      -> Está localizado logo na camada principal da pai
 Descentende Indireto    -> Está localizado dentro de uma outra TAG que está na camada principal
                 Exemplo 
     <div>
-        <p></p>     -> Direto
+        <p></p>     -> Direto a Div
     </div>
 
     <div>
         <section>
-            <p></p> -> Indireto
+            <p></p> -> Indireto a Div
         </section>
     </div>
 
