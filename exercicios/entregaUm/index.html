@@ -1,3 +1,5 @@
+<!-- &rarr; -> HTML aceita unicode, esse faz aparecer uma seta -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,6 +9,7 @@
     <title>Copiando Site Slack</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/bc30e0ebda.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,21 +20,22 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Por que o Slack?</a></li>
-                        <li><a href="#">Soluçoes</a></li>
-                        <li><a href="#">Recursos</a></li>
+                        <li><a href="#ini">Por que o Slack?</a></li>
+                        <li><a href="#soluc">Soluçoes</a></li>
+                        <li><a href="#recur">Recursos</a></li>
                         <li><a href="#">Preços</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="menuDir">
-                <a href="#">Entrar</a>
-                <button type="button" class="btn">PRIMEIROS PASSOS</button>
+                <a href="https://slack.com/signin">Entrar</a>
+                <button type="button" class="btn" id="btn1">PRIMEIROS
+                    PASSOS</button>
             </div>
         </header>
-        <!-- CSS a fazer-->
-        <section class="inicio">
+
+        <section class="inicio" id="ini">
 
             <h1>Imagine o que você e sua <br> equipe poderão fazer juntos</h1>
 
@@ -52,167 +56,189 @@
                     está melhor conectada.</p>
                 <form action="#" method="POST">
                     <input type="email" name="mail" id="email" placeholder="Endereço de e-mail">
-                    <button type="button" class="btn">PRIMEIROS PASSOS</button>
-                    <span><br>Já está usando o Slack? <a href="#">Entre</a>.</span>
+                    <button type="button" class="btn" id="btn2">PRIMEIROS PASSOS</button>
+                    <span><br>Já está usando o Slack? <a href="https://slack.com/signin">Entre</a>.</span>
                 </form>
                 <img src="./img/slack-customer-hellofresh.jpg" alt="Mesa cheia de comida.">
             </div>
         </section>
 
-        <section>
+        <section class="solucoes" id="soluc">
             <h2>Seu espaço para trabalhar em equipe</h2>
-            <p>Discussões sobre projetos, documentos importantes, anuncios de refeições gratuitas - tudo isso reunido e
-                organizado no Slack. Com sua equipe e as informações em um local facilmente pesquisável, colaborar
-                on-line é tão facil quanto colaborar pessoalmente.</p>
+            <p>Discussões sobre projetos, documentos importantes, anuncios de refeições gratuitas <br> - tudo isso
+                reunido e
+                organizado no Slack. Com sua equipe e as informações em um <br> local facilmente pesquisável, colaborar
+                on-line é tão facil quanto colaborar <br> pessoalmente.</p>
         </section>
 
-        <section>
-            <article>
-                <img src="./img/organized-convos.png" alt="Símbolo Bate-papo">
-                <h3>Canais</h3>
-                <p><a href="#">A comunicação no Slack</a> ocorre em canais organiados por projetos, assuntos, equipes ou
+        <section class="recursos" id="recur">
+            <article class="canais">
+                <img src="./img/organized-convos.png" alt="Símbolo Bate-papo" class="imgArticle">
+                <h3 class="hArticle">Canais</h3>
+                <p><a href="#" class="aArticle">A comunicação no Slack</a> ocorre em canais organiados por projetos,
+                    assuntos, equipes ou
                     o que fizer mais sentido para você.</p>
             </article>
 
-            <article>
-                <img src="./img/search-binoculars.png" alt="Binóculos">
-                <p>No Slack, <a href="#">todos podem pesquisar</a> as conversas. Assim, você pode explorar o
+            <article class="pesquisar">
+                <img src="./img/search-binoculars.png" alt="Binóculos" class="imgArticle">
+                <h3 class="hArticle">Pesquisar</h3>
+                <p>No Slack, <a href="#" class="aArticle">todos podem pesquisar</a> as conversas. Assim, você pode
+                    explorar o
                     conhecimento da empresa e localizar as informações necessárias.</p>
             </article>
 
-            <article>
-                <img src="./img/apps-gears.png" alt="Engrenagem">
-                <p>O Slack é compatível com as <a href="#">ferramentas e serviços que você já usa</a> diariamente.
+            <article class="integracao">
+                <img src="./img/apps-gears.png" alt="Engrenagem" class="imgArticle">
+                <h3 class="hArticle">Integrações</h3>
+                <p>O Slack é compatível com as <a href="#" class="aArticle">ferramentas e serviços que você já usa</a>
+                    diariamente.
                     Adicione informações ou execute ações sem sair do Slack.</p>
             </article>
 
-            <article>
-                <img src="./img/security-lock.png" alt="Cadeado">
-                <p>No Slack, levamos a <a href="#">Segurança</a> muito a sério. Oferecemos recursos como a A2F e o SSO
+            <article class="seguranca">
+                <img src="./img/security-lock.png" alt="Cadeado" class="imgArticle">
+                <h3 class="hArticle">Segurança</h3>
+                <p>No Slack, levamos a <a href="#" class="aArticle">Segurança</a> muito a sério. Oferecemos recursos
+                    como a A2F e o SSO
                     para garantir a segurança dos seus dados e proteger sua organização.</p>
             </article>
 
-            <a href="">Saiba mais sobre os recursos do Slack --></a>
         </section>
 
-        <section>
-            <h2>Você está bem acompanhado</h2>
-            <span>Milhões de pessoas em todo o mundo já tornaram o Slack o lugar onde o trabalho em equipe
-                acontece.</span>
+        <div class="saibaMais">
+            <a href="#" class="aArticle">Saiba mais sobre os recursos do Slack &rarr;</a>
+        </div>
 
-            <article>
-                <img src="./img/slack-customer-trivago.jpg" alt="Maquete de uma praia">
-                <img src="./img/logo-trivago.png" alt="Logo Trivago">
-                <span>Criação de uma experiência melhor para o funcionário com o Slack</span>
-                <a href="#">--></a>
-            </article>
-            <article>
-                <img src="./img/slack-customer-autodesk.jpg" alt="Pessoa tirando foto">
-                <img src="./img/autodesk.png" alt="Logo Autodesk">
-                <span>União entre experiência do produto e cultura da empresa na Autodesk</span>
-                <a href="#">--></a>
-            </article>
-            <article>
-                <img src="./img/slack-customer-liberty-mutual.jpg" alt="Imagem cheia de bóias">
-                <img src="./img/liberty-mutual.png" alt="Logo da Liberty Mutual">
-                <span></span>
-                <a href="#">--></a>
-            </article>
+        <section class="secRecursos">
+            <div id="parteSuperior">
+                <h2>Você está bem acompanhado</h2>
+                <span>Milhões de pessoas em todo o mundo já tornaram o Slack o lugar onde o trabalho em equipe
+                    acontece.</span>
+            </div>
+
+            <div id="secCorpo">
+                <article>
+                    <img src="./img/slack-customer-trivago.jpg" alt="Maquete de uma praia" id="imgPrinc">
+                    <img src="./img/logo-trivago.png" alt="Logo Trivago" id="imgSec">
+                    <span>Criação de uma experiência melhor para o funcionário com o Slack</span>
+                    <a href="#">&rarr;</a>
+                </article>
+
+                <article>
+                    <img src="./img/slack-customer-autodesk.jpg" alt="Pessoa tirando foto" id="imgPrinc">
+                    <img src="./img/autodesk.png" alt="Logo Autodesk" id="imgSec">
+                    <span>União entre experiência do produto e cultura da empresa na Autodesk</span>
+                    <a href="#">&rarr;</a>
+                </article>
+
+                <article>
+                    <img src="./img/slack-customer-liberty-mutual.jpg" alt="Imagem cheia de bóias" id="imgPrinc">
+                    <img src="./img/liberty-mutual.png" alt="Logo da Liberty Mutual" id="imgSec">
+                    <span>Modernização da comunicação das equipes</span>
+                    <a href="#">&rarr;</a>
+                </article>
+            </div>
         </section>
 
-        <section>
+        <section class="logotipos">
             <div>
                 <div>
-                    <img src="./img/nextel.png" alt="Logo Nextel">
+                    <img src="./img/nextel.png" alt="Logo Nextel" classe="logo">
                 </div>
+
                 <div>
-                    <img src="./img/lyft.png" alt="Logo Lyft">
+                    <img src="./img/lyft.png" alt="Logo Lyft" classe="logo">
                 </div>
+
                 <div>
-                    <img src="./img/hellofresh-alt.png" alt="Logo HelloFresh">
+                    <img src="./img/hellofresh-alt.png" alt="Logo HelloFresh" classe="logo">
                 </div>
+
                 <div>
-                    <img src="./img/stone.png" alt="Logo Stone">
+                    <img src="./img/stone.png" alt="Logo Stone" classe="logo">
                 </div>
+
                 <div>
-                    <img src="./img/ocado.png" alt="Logo Ocado">
+                    <img src="./img/ocado.png" alt="Logo Ocado" classe="logo">
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="testeFree">
             <div>
                 <h3>Teste o Slack gratuitamente com sua equipe</h3>
                 <a href="#">PRIMEIROS PASSOS</a>
             </div>
         </section>
 
-        <section>
+        <section class="menuNav">
             <img src="./img/logomini.svg" alt="Logo Slack">
-            <div>
+            <div class="produtoNav">
                 <h4>PRODUTO</h4>
-                <a href="#">Por queê o Slack?</a>
-                <a href="#">Empresa</a>
-                <a href="#">Segurança</a>
-                <a href="#">Histórias de Clientes</a>
-                <a href="#">Preços</a>
+                <a href="#">Por quê o Slack?<br></a>
+                <a href="#">Empresa<br></a>
+                <a href="#">Segurança<br></a>
+                <a href="#">Histórias de Clientes<br></a>
+                <a href="#">Preços<br></a>
                 <a href="#">Demonstração do Slack</a>
             </div>
-            <div>
+
+            <div class="equipeNav">
                 <h4>SLACK PARA EQUIPES</h4>
-                <a href="#">Engenharia</a>
-                <a href="#">TI</a>
-                <a href="#">Suporte ao cliente</a>
-                <a href="#">Vendas</a>
-                <a href="#">Marketing</a>
-                <a href="#">Gerenciamento de projetos</a>
+                <a href="#">Engenharia<br></a>
+                <a href="#">TI<br></a>
+                <a href="#">Suporte ao cliente<br></a>
+                <a href="#">Vendas<br></a>
+                <a href="#">Marketing<br></a>
+                <a href="#">Gerenciamento de projetos<br></a>
                 <a href="#">Recursos Humanos</a>
             </div>
-            <div>
+
+            <div class="recursosNav">
                 <h4>Recursos</h4>
-                <a href="#">Baixar o Slack</a>
-                <a href="#">E-books e relatórios</a>
-                <a href="#">Diretório de app</a>
-                <a href="#">API</a>
-                <a href="#">Central de Ajuda</a>
+                <a href="#">Baixar o Slack<br></a>
+                <a href="#">E-books e relatórios<br></a>
+                <a href="#">Diretório de app<br></a>
+                <a href="#">API<br></a>
+                <a href="#">Central de Ajuda<br></a>
                 <a href="#">Parceiros</a>
             </div>
-            <div>
+
+            <div class="empresaNav">
                 <h4>Empresa</h4>
-                <a href="#">Sobre nós</a>
-                <a href="#">Liderança</a>
-                <a href="#">Blog</a>
-                <a href="#">Kit de mídia</a>
+                <a href="#">Sobre nós<br></a>
+                <a href="#">Liderança<br></a>
+                <a href="#">Blog<br></a>
+                <a href="#">Kit de mídia<br></a>
                 <a href="#">Carreiras</a>
             </div>
         </section>
 
         <footer>
             <div>
-                <div>
+                <div class="linksUteis">
                     <a href="#">Status</a>
                     <a href="#">Privacidade e Termos</a>
                     <a href="#">Fale Conosco</a>
-                    <a href="#">Alterar Região (Modificar)</a>
+                    <a href="#"><i class="fas fa-globe"></i> Alterar Região <i class="fas fa-angle-down"></i></a>
                 </div>
 
                 <ul class="logos">
-                    <li><a href="#"><img src="./img/twitter.png" alt="Logo Twitter"></a>
+                    <li><a href="https://twitter.com/slackhq"><i class="fab fa-twitter fa-2x"></i></a>
                     </li>
-                    <li><a href="#"><img src="./img/facebook.jfif" alt="Logo Facebook"></a>
+                    <li><a href="https://www.facebook.com/slackhq"><i class="fab fa-facebook-square fa-2x"></i></a>
                     </li>
-                    <li><a href="#"><img src="./img/youtube.jpg" alt="Logo Youtube"></a>
+                    <li><a href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw"><i
+                                class="fab fa-youtube fa-2x"></i></a>
                     </li>
-                    <li><a href="#"><img src="./img/linkedin.jpg" alt="Logo Linkedin"></a>
+                    <li><a href="https://www.linkedin.com/company/tiny-spec-inc/"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
                     </li>
                 </ul>
             </div>
         </footer>
     </main>
-
-
-
-
 
     <script src="js/script.js"></script>
 </body>
