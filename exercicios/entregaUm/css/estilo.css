@@ -8,25 +8,28 @@ body {
     color: #1d1d1d;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
 }
 
 header{
-    width: 100%;
-    height: 70px;
     background-color: #ffffff;
     box-shadow: 0 0 1px 0 black;
     position: fixed;
+    width: 100vw;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    margin-top: -9em;
-    z-index: 2;
+    z-index: 100;
 }
 
 header > div > img {
     max-width: 100%;
-    display: block;
 }
 
 .menuEsq {
@@ -42,12 +45,12 @@ header > div > img {
 }
 
 .menuEsq > nav > ul > li {
-    display: block;
     padding-left: 2em;
 }
 
 .menuEsq > nav > ul > li > a:link{
     text-decoration: none;
+    color: #1d1d1d;
 }
 
 .menuEsq > nav > ul > li > a:visited{
@@ -81,8 +84,8 @@ header > div > img {
 }
 
 .menuDir > a:link {
-    color: #1d1d1d;
     text-decoration: none;
+    color: #1d1d1d;
 }
 
 .menuDir > a:visited {
@@ -94,13 +97,21 @@ header > div > img {
     border-bottom: 1px solid #1264a3;
 }
 
+.inicio {
+    position: relative;
+    top: 10em;
+    left: 0;
+    width: 100vw;
+}
+
 .inicio > h1 {
     text-align: left;
     font-weight: bold;
     font-size: 3.6em;
-    margin: 2.4em 0 0 3.9em;
+    margin: 0 0 0 3.9em;
     line-height: 1.1em;
     align-items: center;
+    width: 880px;
     height: 150px;
     z-index: 1;
 }
@@ -109,6 +120,8 @@ header > div > img {
     margin: -2.8em 0 0 4.88em;
     position: relative;
     z-index: -1;
+    width: 300px;
+    height: 300px;
 }
 
 .imgUm > img{
@@ -138,10 +151,10 @@ header > div > img {
 .conheca {
     text-align: left;
     margin-top: -10em;
-    position: relative;
-    width: 30em;
-    float: right;
-    margin: -36em .7em 0 0;
+    width: 28em;
+    position: absolute;
+    right: 2em;
+    top: 22em;
 }
 
 .conheca > p {
@@ -149,6 +162,8 @@ header > div > img {
     line-height: 1.4em;
     color: #1d1d1d;
     margin-bottom: 3em;
+    width: 500px;
+    height: 110px;
 }
 
 .conheca > form > input {
@@ -183,6 +198,7 @@ header > div > img {
 
 .conheca > form > span > a:link{
     text-decoration: none;
+    color: #1d1d1d;
 }
 
 .conheca > form > span > a:visited{
@@ -202,11 +218,18 @@ header > div > img {
     margin: 2.1em 0 0 0;
 }
 
+.solucoes {
+    position: relative;
+    top: 10em;
+    width: 100vw;
+}
+
 .solucoes > h2 {
     font-size: 1.7em;
     font-weight: bolder;
     text-align: center;
     margin: 6em 0 1em 0;
+    width: 100vw;
 }
 
 .solucoes > p {
@@ -214,12 +237,16 @@ header > div > img {
     color: #3d3d3d;
     font-size: 1.2em;
     line-height: 1.5em;
+    width: 100vw;
 }
 
 .recursos {
     display: flex;
     justify-content: space-between;
-    margin: 4.5em 0 0 2em;
+    width: 100vw;
+    position: relative;
+    top: 15em;
+    padding-left: 2em;
 }
 
 .recursos > article {
@@ -242,6 +269,7 @@ header > div > img {
 
 .aArticle:link {
     text-decoration: none;
+    color: #3d3d3d;
 }
 
 .aArticle:visited {
@@ -281,12 +309,17 @@ header > div > img {
 .saibaMais {
     text-align: center;
     font-size: 1.05em;
+    position: relative;
+    top: 15em;
+    width: 100vw;
     margin-bottom: 8em;
 }
 
 .secRecursos {
     text-align: center;
     background-color: #f5f5f5;
+    position: relative;
+    top: 15em;
 }
 
 #parteSuperior { 
@@ -299,7 +332,8 @@ header > div > img {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    padding: 3.8em 0 0.8em 0;
+    margin-top: 3em;
+    padding-bottom: 0.8em;
 }
 
 #parteSuperior > span {
@@ -311,7 +345,7 @@ header > div > img {
 
 #secCorpo {
     display: flex;
-    margin: 0 10%;
+    margin: 2em 10% 0 10%;
 }
 
 #secCorpo > article {
@@ -320,8 +354,8 @@ header > div > img {
     margin: 0 auto 3em auto;
     padding: 0.5em 0.5em 2em 0.5em;
     width: 281px;
-    height: 500px;
-    overflow: auto;
+    height: 550px;
+    overflow: inherit;
 }
 
 #imgPrinc {
@@ -344,12 +378,14 @@ header > div > img {
 #secCorpo > article > a {
     font-size: 2em;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     right: 10px;
+    z-index: 2;
 }
 
 #secCorpo > article > a:link {
     text-decoration: none;
+    color: #1264a3;
 }
 
 #secCorpo > article > a:visited {
@@ -362,8 +398,10 @@ header > div > img {
 }
 
 .logotipos {
-    padding: 5em 0;
     background-color: #f5f5f5;
+    padding: 5em 0;
+    position: relative;
+    top: 10em;
 }
 
 .logotipos > div {
@@ -383,10 +421,10 @@ header > div > img {
     background-image: url("background-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 100%;
+    width: 100vw;
     height: 400px;
-    margin: 0 0 5.5em 0;
+    position: relative;
+    top: 10em;
 }
 
 .testeFree > div {
@@ -402,8 +440,7 @@ header > div > img {
     color: white;
     font-size: 1.8em;
     font-weight: bold;
-    margin-bottom: 2em;
-    
+    margin-bottom: 2em;    
 }
 
 .testeFree > div > a  {
@@ -416,6 +453,7 @@ header > div > img {
 
 .testeFree > div > a:link {
     text-decoration: none;
+    color: #611f69;
 }
 
 .testeFree > div > a:visited {
@@ -430,15 +468,25 @@ header > div > img {
 .menuNav {
     display: flex;
     margin-bottom: 5em;
+    position: relative;
+    top: 15em;
+    width: 100vw;
 }
 
 .menuNav > img {
     width: 60px;
     height: 60px;
-    margin: 0 22em 0 2em;
+    margin-left: 1.8em;
 }
 
-.menuNav > div {
+.menuNav > div{
+    display: flex;
+    position: relative;
+    left: 16em;    
+    width: 900px;
+}
+
+.menuNav > div > div{
     text-align: left;
     font-size: 0.85em;
     font-weight: bold;
@@ -446,27 +494,28 @@ header > div > img {
     width: 250px;
     height: 290px;
     margin-right: 1em;
-    
 }
 
-.menuNav > div > a:link {
+.menuNav > div > div > a:link {
     text-decoration: none;
     color: #696969;
 }
 
-.menuNav > div > a:visited {
+.menuNav > div > div > a:visited {
     color: #696969;
 }
 
-.menuNav > div > a:hover {
+.menuNav > div > div > a:hover {
     color: #1264a3;
     border-bottom: 1px solid #1264a3;
 }
 
 footer {
     background-color: #f5f5f5;
-    width: 100%;
+    width: 100vw;
     height: 110px;
+    position: relative;
+    top: 15em;
 }
 
 footer > div {
@@ -483,6 +532,7 @@ footer > div {
 
 .linksUteis > a:link{
     text-decoration: none;
+    color: #1d1d1d;
 }
 
 .linksUteis > a:visited{
@@ -505,6 +555,7 @@ footer > div {
 
 .logos > li > a:link {
     text-decoration: none;
+    color: #1d1d1d;
 }
 
 .logos > li > a:visited {
@@ -513,4 +564,153 @@ footer > div {
 
 .logos > li > a:hover {
     color: #1264a3;
+}
+
+/* Inicio Responsividade */
+
+@media screen and (min-width:1024px) and (max-width:1340px){
+    
+    .menuDir > button {
+        padding: 0.75em 1em;
+        margin-left: 1em;
+    }
+
+    .menuEsq > nav > ul{
+        margin-left: 1em;
+    }
+
+    .menuEsq > nav > ul > li {
+        padding-left: 1em;
+    }
+
+    .inicio > h1 {
+        font-size: 2.6em;
+        line-height: 1.1em;
+    }
+
+    .imgUm {
+        top: -1.5em;
+        left: 1em;
+    }
+
+    .imgUm > img{
+        width: 200px;
+        height: 200px;
+    }
+        
+    .imgDois {
+        top: -4em;
+        left: -0.78em;
+    }
+    
+    .imgDois > img{
+        width: 450px;
+        height: 445px;
+    }
+    
+    .imgDois > span {
+        font-size: 0.7em;
+    }
+    
+    .conheca {
+        top: 18em;
+        right: -7.5em;
+    }
+    
+    .conheca > p {
+        font-size: .8em;
+        width: 350px;
+    }
+    
+    .conheca > form {
+        width: 300px;
+    }
+
+    .conheca > form > input {
+        width: 15em;
+        height: 3em;
+        font-size: .8em;
+        margin-bottom: .5em;
+    }
+    
+    .conheca > form > button {
+        font-size: .7em;
+        width: 217px;
+        height: 3.5em;
+        margin-left: 0;
+        margin-bottom: .5em;
+    }
+    
+    .conheca > form > span {
+        font-size: .8em;
+    }
+
+    .conheca > img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .solucoes {
+        top: 5em;
+    }
+
+    #secCorpo {
+        margin: 0 5%;
+    }
+    
+    #imgPrinc {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #imgSec {
+        margin: 1em auto;
+    }
+    
+    #secCorpo > article {
+        width: 220px;
+        height: 440px;  
+    }
+
+    #secCorpo > article > span {
+        font-size: 1em;
+    }
+    
+    #secCorpo > article > a {
+        font-size: 1.5em;
+    }
+
+    .testeFree > div {
+        width: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .testeFree > div > h3 {
+        font-size: 1.5em;
+    }
+    
+    .testeFree > div > a  {
+        font-size: 0.7em;
+    }
+
+    .menuNav {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    .menuNav > img {
+        margin-right: 10em;
+    }
+    
+    .menuNav > div {
+        font-size: 0.7em;
+        width: 600px;
+        left: 13em;
+    }
+    
+    footer {
+        top: 13em;
+    }
 }
