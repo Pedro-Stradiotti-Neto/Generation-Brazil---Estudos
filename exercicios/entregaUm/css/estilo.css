@@ -104,24 +104,33 @@ header > div > img {
     width: 100vw;
 }
 
-.inicio > h1 {
+.inicio > div {
+    display: grid;
+    grid-template-columns: 9.907407407% 13.333333333% 33.148148148% 22px 29.259259259% 12.314814815%;
+    grid-template-rows: 100px 69px minmax(auto,125px) auto 286px 30px;
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.inicio > div > h1 {
     text-align: left;
     font-weight: bold;
-    font-size: 3.6em;
-    margin: 0 0 0 3.9em;
-    line-height: 1.1em;
-    align-items: center;
-    width: 880px;
-    height: 150px;
+    font-size: 3.3em;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
     z-index: 1;
 }
 
 .imgUm {
-    margin: -2.8em 0 0 4.88em;
-    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: -13%;
     z-index: -1;
-    width: 300px;
-    height: 300px;
 }
 
 .imgUm > img{
@@ -131,39 +140,37 @@ header > div > img {
 
 
 .imgDois {
-    width: 600px;
-    height: 600px;
-    position: relative;
-    margin: -11em 0 3em 11.4em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+
 }
 
 .imgDois > img{
-    width: 570px;
-    height: 565px;
+    max-width: 502px;
+    max-height: 502px;
     margin-bottom: 0.5em;
 }
 
 .imgDois > span {
-    font-size: 0.9em;
+    font-size: 15px;
     color: #696969;
 }
 
 .conheca {
     text-align: left;
-    margin-top: -10em;
-    width: 28em;
-    position: absolute;
-    right: 2em;
-    top: 22em;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 7;
 }
 
 .conheca > p {
-    font-size: 1em;
+    font-size: 14px;
     line-height: 1.4em;
     color: #1d1d1d;
-    margin-bottom: 3em;
-    width: 500px;
-    height: 110px;
+    margin-bottom: 22px;
 }
 
 .conheca > form > input {
@@ -171,28 +178,26 @@ header > div > img {
     height: 3.7em;
     border-radius: 3px;
     box-shadow: none;
-    font-size: 1em;
-    padding-left: 1em;
-    margin-bottom: 1em;
+    font-size: 14px;
 }
 
 .conheca > form > button {
     background-color: #611f69;
     border: none;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 14px;
     font-weight: bold;
     color: white;
-    width: 250.3px;
-    height: 4.5em;
+    width: 12.6em;
+    height: 3.7em;
     border-radius: 4px;
-    margin-left: 1em;
+    margin-left: 16px;
     cursor: pointer;
 }
 
 .conheca > form > span {
     color: #1d1d1d;
-    font-size: .9em;
+    font-size: 16px;
 }
 
 
