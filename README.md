@@ -14,6 +14,8 @@ Prática em exercícios da parte FrontEnd
    - Estilo a ser aplicado no site e todas as suas informações.
  - JavaScript
    - Parte lógica que irá contemplar as funcionalidades e animações do site.
+ - Projeto
+   - Primeiro Projeto: Copiando o Site do Slack.
 
 ## Notas de Síntaxe
 Manual simplificado dos principais comandos utilizados em cada uma das plataformas descritas.
