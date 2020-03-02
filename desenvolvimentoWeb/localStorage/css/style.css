@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body > form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;              /* Inicializa o flex-box */
+    flex-direction: column;     /* Indica a direção do flex-box (columm / row) */
+}
+
+input, select, label {
+    font-size: 1.125em;
+    font-family: monospace sans-serif;
+    background-color: #ffffff;
+    border-radius: 3px;
+    outline: none;               /* Não apresenta a "seleção" ao pressionar TAB (navegação pelo teclado) */
+}
+
+label {
+    font-weight: bold;
+    color: #8844ee;
+    margin: 20px 0 5px 0;
+}
+
+#add, #delete {
+    margin: 20px 0 5px 0;
+}

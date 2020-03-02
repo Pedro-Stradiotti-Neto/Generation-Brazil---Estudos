@@ -1,0 +1,40 @@
+<!-- 
+    <select name="" id=""> ___ </select>        -> Criação de uma "Lista de Opções"
+    <option value=""> ___ </option>             -> Opções a serem criados para as escolhas do usuário
+    <option selected disabled> ___ </option>    -> Coloca-se na primeira opção, padrão inicial
+
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Local Storage (Formulário)</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <form>
+        <label for="estado">Estado: </label>
+        <select name="estado" id="estado">
+            <option selected disabled>Selecione um estado: </option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="ba">Bahia</option>
+        </select>
+        <label for="dataInicio">Início</label>
+        <input type="date" id="dataInicio" name="dataInicio">
+        <label for="dataFinal">Final</label>
+        <input type="date" id="dataFinal" name="dataFinal">
+        <input type="button" value="Adicionar" id="add">
+        <input type="button" value="Excluir" id="delete">
+    </form>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

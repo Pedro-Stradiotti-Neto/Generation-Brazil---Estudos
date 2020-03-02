@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html, body {
+    margin: 0;
+    background-color: #2b2927;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container-all {
+    width: 100%;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    width: calc(33% - 6px);
+    overflow: hidden;          /* -> Impede de que seja criado barra de rolagem horizontal */
+    height: auto;
+    margin: 3px;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+section.container > img {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    transition-duration: .3s;    /* -> Duração de animação */
+}
+
+.title {
+    position: absolute;
+    display: block;     /* -> Transforma o item em um "bloco" */
+    cursor: pointer;
+    top: 35%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+}
+
+.text {
+    position: absolute;
+    top: 70%;
+    cursor: pointer;
+    max-width: 80%;
+    text-align: center;
+    left: 50%;
+    font-size: 1em;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .3s;
+    display: none;
+}
+
+.container:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    filter: grayscale(50%);    
+    opacity: .8;
+}
+
+.container:hover span {
+    display: block;
+    color: white;
+    transition-duration: .3s;
+}
+
