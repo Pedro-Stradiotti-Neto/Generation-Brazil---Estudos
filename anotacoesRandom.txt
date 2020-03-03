@@ -4,3 +4,6 @@ https://fjorgemota.com/git-flow-uma-forma-legal-de-organizar-repositorios-git/
 
 Pixabay -> Imagens em alta qualidade, sem a necessidade de colocar direitos
 Link: https://pixabay.com/pt/
+
+Comando Try/Cacht/Finally -> Usado para captura de erros e minimizar bugs no sistema.
+https://www.devmedia.com.br/blocos-try-catch/7339 (Mais Informações)
