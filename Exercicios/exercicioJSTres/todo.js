@@ -5,14 +5,21 @@ function TODO(desc, dDate) {
     this.dueDate = dDate;
 }
 
+/* let obj = {"description":description, "dueDate": dueDate};    -> Outra forma de se criar/atribuir um objeto a variável
+   
+    let obj = {
+   "description": description,         -> Utiliza-se "" para criar os rótulos das propriedades, nesse jeito de criação
+   "dueDate": dueDate,
+   "getData": () => {códigos}          -> Pode-se criar métodos dessa forma
+}; */
+
 function addTodoItem(todo) {
     var ul = document.getElementById("todosList");
     var li = document.createElement("li");
     li.className = "list-group-item";
     li.appendChild(document.createTextNode(todo.description + " - " + todo.dueDate));
     ul.appendChild(li);
-    arrayTodo.push(new TODO(todo));
-
+    arrayTodo.push(todo);
 }
 
 function showErrorMessage(message) {
@@ -42,31 +49,27 @@ function validTodo(todo) {
     hideErrorMessage();
 
     if ((!todo.description) && (!todo.dueDate.value)) {
-        showErrorMessage('Digite uma descrição e uma data!');
-        return false;
+        showErrorMessage('Descrição e uma Data Obrigatórios!');
     }
-
-    if (!todo.description) {
-        showErrorMessage('Digite uma descrição!');
-        return false;
+    else if (!todo.description) {
+        showErrorMessage('Descrição Obrigatória!');
     }
-
-    if (!todo.dueDate) {
-        showErrorMessage('Digite uma data!');
-        return false;
+    else if (!todo.dueDate) {
+        showErrorMessage('Data Obrigatória!');
     }
-
-    if (todo.description.length > 2) {
+    else if (todo.description.length < 3) {
+        showErrorMessage('Descrição com pelo menos três letras!');
+    }
+    else {
         return true;
-    } else {
-        showErrorMessage('Digite uma palavra com pelo menos três letras!');
     }
-
+    return false;
 }
 
 function clearTodos() {
     arrayTodo = [];
-    document.getElementById("todosList").remove();
+    let ul = document.getElementById("todosList");
+    ul.innerText = "";
     console.log(arrayTodo);
 
 }
