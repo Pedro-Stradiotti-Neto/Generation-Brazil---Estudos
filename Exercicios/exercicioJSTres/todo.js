@@ -44,7 +44,7 @@ function onAddClicked() {
     console.log(arrayTodo);
 }
 
-function validTodo(todo) {
+function validTodo(a) {
 
     hideErrorMessage();
 
