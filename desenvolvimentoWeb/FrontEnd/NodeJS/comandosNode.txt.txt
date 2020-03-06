@@ -1,0 +1,27 @@
+Node JS
+Faz com que o JavaScript seja executado junto ao Servidor (BackEnd), não dando acesso ao código junto ao usuário
+
+Comandos NodeJS
+
+- node -v (Verifica se o NodeJS está instalado, se estiver mostrará a versão instalada)
+- npm init (Inicializa uma aplicação em Node)
+	- package name: (__) (recomenda-se a manter o mesmo nome da pasta onde ele está)
+	- version: (_._._) (Versão do arquivo)
+	- description: (Descrição do arquivo)
+	- entry point: (
+	- test command: (
+	- git repository: (Link com o repositório do GitHub)
+	- keyword: (
+	- author: (Nome do autor)
+	- license: (ISC) (Tipo de licensa a ser usada na aplicação)
+	- Confirmação (Confirmar os dados colocados)
+- npm init -y (Inicializa sem as perguntas serem feitas
+- npm i ___	-> Faz a instalalção de um app
+- npm install	-> Faz a instalalção de um app
+- node (Entra no node e pode-se digitar em javascript
+	- Ctrl + c (2x) - (Sai de dentro do Node, via terminal)
+
+
+Criando um servidor web
+
+- node __.js (Sobe o servidor Web para ser acessado no browser)
