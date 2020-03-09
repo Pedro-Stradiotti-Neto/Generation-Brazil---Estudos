@@ -1,0 +1,18 @@
+[
+    {
+        "isbn": "9781425432155",
+        "title": "As Crônicas do Gelo e do Fogo",
+        "author": "George R. R. Martin",
+        "publish_date": "1925-08-20",
+        "publisher": "Suma de Letras",
+        "numOfPages": 648
+    },
+    {
+        "isbn": "9781425433689",
+        "title": "O Senhor dos Anéis",
+        "author": "J. R. R. Tolkien",
+        "publish_date": "1954-07-29",
+        "publisher": "Martins Fontes",
+        "numOfPages": 1211
+    }
+]

@@ -18,10 +18,16 @@ Comandos NodeJS
 - npm init -y (Inicializa sem as perguntas serem feitas
 - npm i ___	-> Faz a instalalção de um app
 - npm install	-> Faz a instalalção de um app
-- node (Entra no node e pode-se digitar em javascript
+- node (Entra no node e pode-se digitar em javascript)
 	- Ctrl + c (2x) - (Sai de dentro do Node, via terminal)
 
 
 Criando um servidor web
 
 - node __.js (Sobe o servidor Web para ser acessado no browser)
+
+
+Conceitos
+
+
+
