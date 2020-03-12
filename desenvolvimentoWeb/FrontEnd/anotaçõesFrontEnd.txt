@@ -1,0 +1,8 @@
+TypeScript -> Somente é considerado uma linguagem quando não necessita ser convertido para ser interpretado
+
+Linguagem Forte -> Quando é necessário que seja tipado uma variável
+Linguagem Fraca -> Não há necessidade que seja tipado
+
+Tipagem Estática -> Você faz a tipagem e não é possível alterar seu tipo
+Tipagem Dinâmica -> Pode ser alterado seu tipo durante a execução dos códigos
+

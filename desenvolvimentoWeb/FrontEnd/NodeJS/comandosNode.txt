@@ -15,28 +15,17 @@ Comandos NodeJS
 	- author: (Nome do autor)
 	- license: (ISC) (Tipo de licensa a ser usada na aplicação)
 	- Confirmação (Confirmar os dados colocados)
-- npm init -y (Inicializa sem as perguntas serem feitas)
+- npm init -y (Inicializa sem as perguntas serem feitas
 - npm i ___	-> Faz a instalalção de um app
 - npm install	-> Faz a instalalção de um app
 - node (Entra no node e pode-se digitar em javascript)
 	- Ctrl + c (2x) - (Sai de dentro do Node, via terminal)
+- npm run ____ (roda um script definido no packege.json)
 
 Criando um servidor web
 
 - node __.js (Sobe o servidor Web para ser acessado no browser)
 
----- Códigos para um projeto TypeScript ----
 
-- npm init -y	(Cria um arquivo package.json e inicia o projeto)
-- npm i typescript --save-dev
-		   |-> Instala nas dependencias de desenvolvedor (por projeto)
-	|-> Baixa o TypeScript
-- npm i express --save-dev
-	|-> Gerenciamento das rotas e requisições da minha requisição (https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introdu%C3%A7%C3%A3o)
-- npm i @types/express --save-dev
-	|-> Dependencias do express
-- tsc	-> Realiza a conversão do TypeScript para JavaScript (Caso não especifique o arquivo, ele irá converter todos os existentes)
-- ts-node-dev	-> Faz as tarefas de conversão de TS para JS, derrubar e subir o servidor, mostrando no browser as alterações
-  |-> npm i ts-node-dev --save-dev	-> Instalação do "programa"
-- npm run ____ (roda um script definido no packege.json)
+
 
