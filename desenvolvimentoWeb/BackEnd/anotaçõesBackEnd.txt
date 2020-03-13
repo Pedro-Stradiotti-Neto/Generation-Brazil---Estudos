@@ -1,0 +1,11 @@
+Programações Orientadas ao Objeto (JAVA, C#, Python, C++, PHP)
+
+04 Pilares essenciais
+	-> Abstração
+		| Definir características básicas de um objeto real em programação (Modelo)
+	-> Encapsulamento
+		| Precisa saber como funciona, porém não sabe como ele faz
+	-> Polimorfiso
+		| Mesmo método, trabalhando de formas diferentes
+	-> Herança
+		| Herda caracteristicas do "Pai"
